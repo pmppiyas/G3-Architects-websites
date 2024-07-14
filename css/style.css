@@ -95,9 +95,12 @@ color: var(--dark-gray);
 
 /*responsive media query*/
 @media  screen and (max-width: 576px) {
+  ul{
+    padding-top: 20px;
+  }
   .navbar , .nav-item {
     flex-direction: column-reverse;
-    padding-top: 30px;
+   
   }
 
   .brand-name{
