@@ -6,3 +6,100 @@
   font-weight: 400;
   font-style: normal;
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+:root{
+  --dark:#131313;
+  --dark-gray:#424242;
+  --light-gray:#727272;
+  --white-color:#ffffff;
+  --orange-color:#FF900E;
+  --light-orange:#fff4e6;
+}
+
+header{
+  background-color: var(--light-orange);
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-name{
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+.navbar ul{
+  display: flex;
+  gap:40px
+}
+
+.nav-item{
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nav-link{
+text-decoration: none;
+font-weight: 600;
+font-size: 18px;
+color: var(--dark-gray);
+
+}
+
+.navbar , .banner{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner-title{
+  font-weight: 700;
+  font-size: 4rem;
+  margin:0 20px;
+}
+.banner-decription{
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.banner-image{
+  width: 100%;
+}
+
+.btn-primary{
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  margin-top: 15px;
+}
+
+/*responsive media query*/
+@media  screen and (max-width: 576px) {
+  .navbar , .nav-item {
+    flex-direction: column-reverse;
+  }
+
+  .brand-name{
+    margin: 15px;
+  }
+}
